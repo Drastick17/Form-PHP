@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <script src="config.js" type="module"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <article>
+        <form class="userForm">
+          <header>
+            <h1>Formulario de registro</h1>
+          </header>
+          <section class="form-body">
+            <label class="field pointer" for="email">
+              Email:
+              <input type="email" name="email" id="email" class="input" />
+              <span error="email"></span>
+            </label>
+            <label class="field pointer" for="name">
+              Nombre completo:
+              <input type="text" name="name" id="name" class="input" />
+              <span error="name"></span>
+            </label>
+            <label class="field pointer" for="birthdate">
+              Fecha de nacimiento:
+              <input type="date" name="birthdate" id="birthdate" class="input" />
+              <span error="birthdate"></span>
+            </label>
+            <label class="field pointer" for="sex">Sexo:</label>
+            <select name="sex" id="sex" class="input">
+              <option value="">Sin seleccionar</option>
+              <option value="1">Masculino</option>
+              <option value="2">Femenino</option>
+            </select>
+            <span error="sex"></span>
+            <div class="checks">
+                <label>Intereses:</label>
+                <label class="pointer">
+                  <input
+                    type="checkbox"
+                    name="interests"
+                    id="interests"
+                    value="1"
+                  />
+                  Computación
+                </label>
+                <label class="pointer">
+                  <input
+                  
+                    type="checkbox"
+                    name="interests"
+                    id="interests"
+                    value="2"
+                  />
+                  Deportes
+                </label>
+                <label class="pointer">
+                  <input
+                    type="checkbox"
+                    name="interests"
+                    id="interests"
+                    value="3"
+                  />
+                  Música
+                </label>
+                <label class="pointer">
+                  <input
+                    type="checkbox"
+                    name="interests"
+                    id="interests"
+                    value="4"
+                  />
+                  Video juegos
+                </label>
+            </div>
+            <span error="interests"></span>
+          </section>
+          <footer>
+            <button type="submit">Registrar</button>
+          </footer>
+        </form>
+      </article>
+    </main>
+    <script src="index.js" type="module"></script>
+    <script src="users.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Anonymus';
+    src: url("https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSvfedN4.woff2");
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Anonymus'
+}
+
+body{
+    font-size: calc(16px + (17 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+input, select{
+    font-size: inherit;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display:grid;
+    padding: 2rem;
+    grid-template-columns: 1fr;
+    place-content: center;
+}
+
+
+article{
+    width: 100%;
+    max-width: 600px;
+    min-height: 500px;
+    justify-self: center;
+    border:2px solid rgba(0,0,0,0.5);
+    border-radius: 6px;
+}
+
+article form header{
+    text-align: center;
+    background-color: red;
+    color:#fff;
+    padding: 1rem 1.5rem;
+}
+
+article form .form-body{
+padding: 2rem;
+display: flex;
+flex-direction: column;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.checks{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.5);
+    margin: 0 0.25rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+form footer{
+    padding: 1.75rem 0 ;
+    text-align: center;
+    background-color: #000;
+}
+
+footer button{
+    background-color: #f0f0f0;
+    border: 0px;
+    padding: .75rem 2rem;
+    cursor: pointer;
+}
+
+footer button:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
